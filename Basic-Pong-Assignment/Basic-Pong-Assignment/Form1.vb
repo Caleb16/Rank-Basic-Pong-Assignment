@@ -16,8 +16,8 @@
                 dblHorizMomentum = 2
                 dblVertMomentum = 2
             Case "HARD"
-                dblHorizMomentum = 4
-                dblVertMomentum = 4
+                dblHorizMomentum = 3
+                dblVertMomentum = 3
         End Select
 
         'Position game spite (moving objects) Randomized
@@ -39,7 +39,7 @@
         Me.picBall.Top = Me.picBall.Top + dblVertMomentum
         Me.picBall.Left = Me.picBall.Left + dblHorizMomentum
 
-        'detect colisions between the ball and the padel.
+        'Detect colisions between the ball and the padel.
         If Me.picBall.Top + Me.picBall.Height > Me.picPaddle.Top Then
             If Me.picPaddle.Left + Me.picPaddle.Width >= Me.picBall.Left And Me.picPaddle.Left <= Me.picBall.Left + Me.picBall.Width Then
                 dblVertMomentum = -dblVertMomentum
