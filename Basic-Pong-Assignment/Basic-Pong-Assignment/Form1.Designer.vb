@@ -36,6 +36,10 @@ Partial Class frmPong
         Me.picBrick4 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.picBall, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPaddle, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBrick3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,7 +64,7 @@ Partial Class frmPong
         'picPaddle
         '
         Me.picPaddle.BackColor = System.Drawing.Color.Blue
-        Me.picPaddle.Location = New System.Drawing.Point(282, 512)
+        Me.picPaddle.Location = New System.Drawing.Point(282, 496)
         Me.picPaddle.Name = "picPaddle"
         Me.picPaddle.Size = New System.Drawing.Size(110, 20)
         Me.picPaddle.TabIndex = 1
@@ -73,79 +77,79 @@ Partial Class frmPong
         'picBrick3
         '
         Me.picBrick3.BackColor = System.Drawing.Color.DarkGoldenrod
-        Me.picBrick3.Location = New System.Drawing.Point(374, 29)
+        Me.picBrick3.Location = New System.Drawing.Point(355, 25)
         Me.picBrick3.Name = "picBrick3"
-        Me.picBrick3.Size = New System.Drawing.Size(90, 20)
+        Me.picBrick3.Size = New System.Drawing.Size(140, 20)
         Me.picBrick3.TabIndex = 2
         Me.picBrick3.TabStop = False
         '
         'picBrick2
         '
         Me.picBrick2.BackColor = System.Drawing.Color.DarkGoldenrod
-        Me.picBrick2.Location = New System.Drawing.Point(218, 29)
+        Me.picBrick2.Location = New System.Drawing.Point(199, 25)
         Me.picBrick2.Name = "picBrick2"
-        Me.picBrick2.Size = New System.Drawing.Size(90, 20)
+        Me.picBrick2.Size = New System.Drawing.Size(140, 20)
         Me.picBrick2.TabIndex = 3
         Me.picBrick2.TabStop = False
         '
         'picBrick6
         '
         Me.picBrick6.BackColor = System.Drawing.Color.DarkGoldenrod
-        Me.picBrick6.Location = New System.Drawing.Point(218, 78)
+        Me.picBrick6.Location = New System.Drawing.Point(199, 74)
         Me.picBrick6.Name = "picBrick6"
-        Me.picBrick6.Size = New System.Drawing.Size(90, 20)
+        Me.picBrick6.Size = New System.Drawing.Size(140, 20)
         Me.picBrick6.TabIndex = 4
         Me.picBrick6.TabStop = False
         '
         'picBrick7
         '
         Me.picBrick7.BackColor = System.Drawing.Color.DarkGoldenrod
-        Me.picBrick7.Location = New System.Drawing.Point(374, 78)
+        Me.picBrick7.Location = New System.Drawing.Point(355, 74)
         Me.picBrick7.Name = "picBrick7"
-        Me.picBrick7.Size = New System.Drawing.Size(90, 20)
+        Me.picBrick7.Size = New System.Drawing.Size(140, 20)
         Me.picBrick7.TabIndex = 5
         Me.picBrick7.TabStop = False
         '
         'picBrick1
         '
         Me.picBrick1.BackColor = System.Drawing.Color.DarkGoldenrod
-        Me.picBrick1.Location = New System.Drawing.Point(63, 29)
+        Me.picBrick1.Location = New System.Drawing.Point(44, 25)
         Me.picBrick1.Name = "picBrick1"
-        Me.picBrick1.Size = New System.Drawing.Size(90, 20)
+        Me.picBrick1.Size = New System.Drawing.Size(140, 20)
         Me.picBrick1.TabIndex = 6
         Me.picBrick1.TabStop = False
         '
         'picBrick5
         '
         Me.picBrick5.BackColor = System.Drawing.Color.DarkGoldenrod
-        Me.picBrick5.Location = New System.Drawing.Point(63, 78)
+        Me.picBrick5.Location = New System.Drawing.Point(44, 74)
         Me.picBrick5.Name = "picBrick5"
-        Me.picBrick5.Size = New System.Drawing.Size(90, 20)
+        Me.picBrick5.Size = New System.Drawing.Size(140, 20)
         Me.picBrick5.TabIndex = 7
         Me.picBrick5.TabStop = False
         '
         'picBrick8
         '
         Me.picBrick8.BackColor = System.Drawing.Color.DarkGoldenrod
-        Me.picBrick8.Location = New System.Drawing.Point(530, 78)
+        Me.picBrick8.Location = New System.Drawing.Point(511, 74)
         Me.picBrick8.Name = "picBrick8"
-        Me.picBrick8.Size = New System.Drawing.Size(90, 20)
+        Me.picBrick8.Size = New System.Drawing.Size(140, 20)
         Me.picBrick8.TabIndex = 8
         Me.picBrick8.TabStop = False
         '
         'picBrick4
         '
         Me.picBrick4.BackColor = System.Drawing.Color.DarkGoldenrod
-        Me.picBrick4.Location = New System.Drawing.Point(530, 29)
+        Me.picBrick4.Location = New System.Drawing.Point(511, 25)
         Me.picBrick4.Name = "picBrick4"
-        Me.picBrick4.Size = New System.Drawing.Size(90, 20)
+        Me.picBrick4.Size = New System.Drawing.Size(140, 20)
         Me.picBrick4.TabIndex = 9
         Me.picBrick4.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(49, 540)
+        Me.Label1.Location = New System.Drawing.Point(250, 540)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(175, 13)
         Me.Label1.TabIndex = 10
@@ -154,11 +158,47 @@ Partial Class frmPong
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(445, 540)
+        Me.Label2.Location = New System.Drawing.Point(12, 540)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(180, 13)
+        Me.Label2.Size = New System.Drawing.Size(163, 13)
         Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Press ""Shift"" Key To Resume Game."
+        Me.Label2.Text = "Press ""Shift"" Key To Start Game."
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 519)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(118, 13)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "Press ""E"" Key For Easy"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(269, 519)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(134, 13)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "Press ""M"" Key For Medium"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(553, 519)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(119, 13)
+        Me.Label5.TabIndex = 14
+        Me.Label5.Text = "Press ""H"" Key For Hard"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(529, 540)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(143, 13)
+        Me.Label6.TabIndex = 15
+        Me.Label6.Text = "Press ""R"" To Resume Game"
         '
         'frmPong
         '
@@ -166,6 +206,10 @@ Partial Class frmPong
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(684, 562)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picBrick4)
@@ -179,7 +223,7 @@ Partial Class frmPong
         Me.Controls.Add(Me.picPaddle)
         Me.Controls.Add(Me.picBall)
         Me.Name = "frmPong"
-        Me.Text = "Form1"
+        Me.Text = "Brick Breaker Game"
         CType(Me.picBall, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPaddle, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picBrick3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -207,5 +251,9 @@ Partial Class frmPong
     Friend WithEvents picBrick4 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 
 End Class
